@@ -178,7 +178,7 @@
         </div>
     </section><!-- End Services Section -->
 
-    <!-- ======= F.A.Q Section ======= -->
+    {{-- <!-- ======= F.A.Q Section ======= -->
     <section id="faq" class="faq">
         <div class="container-fluid" data-aos="fade-up">
 
@@ -294,7 +294,7 @@
             </div>
 
         </div>
-    </section><!-- End F.A.Q Section -->
+    </section><!-- End F.A.Q Section --> --}}
 
     <!-- ======= Team Section ======= -->
     @include('includes.partials.team')
