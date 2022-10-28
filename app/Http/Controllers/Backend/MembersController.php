@@ -27,7 +27,7 @@ class MembersController extends Controller
             'name' => 'required|string',
             'education' => 'nullable|string',
             'deals_with' => 'required|string',
-            'photo' => 'required|image',
+            'photo' => 'required|image|max:5120',
         ]);
         $path = $request->file('photo')->store('members', ['disk' => 'my_files']);
         $photo_path = 'my_files/' . $path;
@@ -62,7 +62,7 @@ class MembersController extends Controller
             'name' => 'required|string',
             'education' => 'nullable|string',
             'deals_with' => 'required|string',
-            'photo' => 'nullable|image',
+            'photo' => 'nullable|image|max:5120',
         ]);
         $old_photo = $member->photo;
         if ($request->hasFile('photo')) {
