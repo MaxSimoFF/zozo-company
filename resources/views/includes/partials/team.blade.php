@@ -15,12 +15,12 @@
                         <img src="{{ asset($member->photo) }}" class="img-fluid" alt="photo">
                     </div>
                     <div class="member-info">
-                        <div class="social">
+                        {{-- <div class="social">
                             <a href=""><i class="bi bi-twitter"></i></a>
                             <a href=""><i class="bi bi-facebook"></i></a>
                             <a href=""><i class="bi bi-instagram"></i></a>
                             <a href=""><i class="bi bi-linkedin"></i></a>
-                        </div>
+                        </div> --}}
                         <h4>{{ $member->name }}</h4>
                         <span>{{ $member->deals_with }}</span>
                     </div>

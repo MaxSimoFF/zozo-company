@@ -55,6 +55,7 @@
                                                         @method('delete')
                                                         <button type="submit" class="btn btn-danger">Delete</button>
                                                     </form>
+                                                    <a href="{{ route('backend.members.edit', $member) }}" class="btn btn-info">Edit</a>
                                                 </td>
                                             </tr>
                                         @empty

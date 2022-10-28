@@ -50,6 +50,8 @@ Route::group([
         Route::get('/', [\App\Http\Controllers\Backend\MembersController::class, 'index'])->name('index');
         Route::get('/create', [\App\Http\Controllers\Backend\MembersController::class, 'create'])->name('create');
         Route::post('/', [\App\Http\Controllers\Backend\MembersController::class, 'store'])->name('store');
+        Route::get('/edit/{member}', [\App\Http\Controllers\Backend\MembersController::class, 'edit'])->name('edit');
+        Route::put('/{member}', [\App\Http\Controllers\Backend\MembersController::class, 'update'])->name('update');
         Route::delete('/{member}', [\App\Http\Controllers\Backend\MembersController::class, 'destroy'])->name('destroy');
     });
 });

@@ -1,0 +1,109 @@
+@extends('layouts.app-admin')
+
+@section('content')
+    <div class="content-wrapper">
+
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+            <div class="container-fluid">
+                <div class="row mb-2">
+                    <div class="col-sm-6">
+                        <h1>Edit Member [ {{ $member->name }} ]</h1>
+                    </div>
+                    <div class="col-sm-6">
+                        <ol class="breadcrumb float-sm-right">
+                            <li class="breadcrumb-item"><a href="{{ route('backend.index') }}">Dashboard</a></li>
+                            <li class="breadcrumb-item"><a href="{{ route('backend.members.index') }}">Members</a></li>
+                            <li class="breadcrumb-item active">Edit Member</li>
+                        </ol>
+                    </div>
+                </div>
+            </div><!-- /.container-fluid -->
+        </section>
+
+        <!-- Main content -->
+        <section class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card card-primary">
+                            <div class="card-header">
+                                <h3 class="card-title">Edit Member [{{ $member->name }}]</h3>
+                            </div>
+                            <form method="post" action="{{ route('backend.members.update', $member) }}"
+                                enctype="multipart/form-data">
+                                @csrf
+                                @method('put')
+                                <div class="card-body">
+                                    <div class="form-group">
+                                        <label>Name</label>
+                                        <input type="text" name="name" placeholder="Enter member name"
+                                            class="form-control @error('name') is-invalid @enderror" value="{{ old('name') ?? $member->name }}">
+                                        @error('name')
+                                            <span class="text-danger">{{ $message }}</span>
+                                        @enderror
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Education</label>
+                                        <input type="text" name="education"
+                                            class="form-control @error('education') is-invalid @enderror"
+                                            placeholder="Enter member education" value="{{ old('education') ?? $member->education }}">
+                                        @error('education')
+                                            <span class="text-danger">{{ $message }}</span>
+                                        @enderror
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label>Deals with</label>
+                                        <textarea class="form-control @error('deals_with') is-invalid @enderror" name="deals_with" cols="30" rows="5"
+                                            placeholder="Enter what member deals with">{{ old('deals_with') ?? $member->deals_with }}</textarea>
+                                        @error('deals_with')
+                                            <span class="text-danger">{{ $message }}</span>
+                                        @enderror
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputFile">Photo</label>
+                                        <div class="text-muted px-3 mb-2">Leave it empty if you don't want to change it</div>
+                                        <div class="input-group">
+                                            <div class="custom-file">
+                                                <input type="file" name="photo"
+                                                    class="custom-file-input @error('photo') is-invalid @enderror"
+                                                    id="exampleInputFile">
+                                                <label class="custom-file-label" for="exampleInputFile">Choose file</label>
+                                            </div>
+                                            <div class="input-group-append">
+                                                <span class="input-group-text">Upload</span>
+                                            </div>
+                                        </div>
+                                        @error('photo')
+                                            <span class="text-danger">{{ $message }}</span>
+                                        @enderror
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <button type="submit" class="btn btn-primary">Save Changes</button>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- /.card -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </div>
+@endsection
+
+@push('bscripts')
+    <!-- bs-custom-file-input -->
+    <script src="{{ asset('assets/backend/plugins/bs-custom-file-input/bs-custom-file-input.min.js') }}"></script>
+@endpush
+
+@push('ascripts')
+    <script>
+        $(function() {
+            bsCustomFileInput.init();
+        });
+    </script>
+@endpush

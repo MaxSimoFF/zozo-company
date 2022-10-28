@@ -18,7 +18,6 @@ return new class extends Migration
             $table->string('ip');
             $table->string('name');
             $table->string('email');
-            $table->string('subject');
             $table->text('message');
             $table->text('reply')->nullable();
             $table->enum('status', [1, 2])->default(1);

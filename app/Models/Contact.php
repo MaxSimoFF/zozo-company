@@ -10,7 +10,7 @@ class Contact extends Model
     use HasFactory;
 
     protected $fillable = [
-        'ip', 'name', 'email', 'subject', 'message', 'reply', 'status'
+        'ip', 'name', 'email', 'message', 'reply', 'status'
     ];
 
     const UNRESOLVED = 1;

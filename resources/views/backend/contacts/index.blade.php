@@ -35,6 +35,7 @@
                                             <th>Name</th>
                                             <th>Email</th>
                                             <th>Message</th>
+                                            <th>Created at</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -45,10 +46,11 @@
                                                 <td>{{ $contact->name }}</td>
                                                 <td>{{ $contact->email }}</td>
                                                 <td>{{ $contact->message }}</td>
+                                                <td>{{ $contact->created_at->diffForHumans() }}</td>
                                             </tr>
                                         @empty
                                             <tr>
-                                                <td colspan="5" class="text-center">No record found</td>
+                                                <td colspan="6" class="text-center">No record found</td>
                                             </tr>
                                         @endforelse
                                     </tbody>
@@ -59,6 +61,7 @@
                                             <th>Name</th>
                                             <th>Email</th>
                                             <th>Message</th>
+                                            <th>Created at</th>
                                         </tr>
                                     </tfoot>
                                 </table>
