@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="AKancelaria Liczydło is a family company whose presence on the Polish market dates back to 2009. The beginnings of our activity were related to accounting services, around which, over the past decade, a brand supporting clients and offering the highest level of services in the areas of accounting, HR, payroll and tax has been created.">
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
