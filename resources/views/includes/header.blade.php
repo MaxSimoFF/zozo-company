@@ -36,11 +36,11 @@
                 @auth
                     <a class="btn-getstarted scrollto" href="{{ route('backend.index') }}">Panel</a>
                 @else
-                    <a class="btn-getstarted scrollto" href="{{ route('login') }}">Log in</a>
+                    {{-- <a class="btn-getstarted scrollto" href="{{ route('login') }}">Log in</a>
 
                     @if (Route::has('register'))
                         <a class="btn-getstarted scrollto" href="{{ route('register') }}">Register</a>
-                    @endif
+                    @endif --}}
                 @endauth
             </div>
         @endif
