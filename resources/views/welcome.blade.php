@@ -14,7 +14,7 @@
 
                 <div class="col-lg-5">
                     <div class="about-img">
-                        <img src="assets/img/about.png" class="img-fluid" alt="">
+                        <img src="assets/img/about.webp" class="img-fluid" alt="">
                     </div>
                 </div>
 
@@ -71,7 +71,7 @@
                 <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
                     <div class="service-item">
                         <div class="img">
-                            <img src="assets/img/services-1.png" class="img-fluid" alt="">
+                            <img src="assets/img/services-1.webp" class="img-fluid" alt="">
                         </div>
                         <div class="details position-relative">
                             <div class="icon">
@@ -88,7 +88,7 @@
                 <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
                     <div class="service-item">
                         <div class="img">
-                            <img src="assets/img/services-2.png" class="img-fluid" alt="">
+                            <img src="assets/img/services-2.webp" class="img-fluid" alt="">
                         </div>
                         <div class="details position-relative">
                             <div class="icon">
@@ -105,7 +105,7 @@
                 <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
                     <div class="service-item">
                         <div class="img">
-                            <img src="assets/img/services-3.png" class="img-fluid" alt="">
+                            <img src="assets/img/services-3.webp" class="img-fluid" alt="">
                         </div>
                         <div class="details position-relative">
                             <div class="icon">
@@ -122,7 +122,7 @@
                 <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="500">
                     <div class="service-item">
                         <div class="img">
-                            <img src="assets/img/services-4.png" class="img-fluid" alt="">
+                            <img src="assets/img/services-4.webp" class="img-fluid" alt="">
                         </div>
                         <div class="details position-relative">
                             <div class="icon">
@@ -140,7 +140,7 @@
                 <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="600">
                     <div class="service-item">
                         <div class="img">
-                            <img src="assets/img/services-5.png" class="img-fluid" alt="">
+                            <img src="assets/img/services-5.webp" class="img-fluid" alt="">
                         </div>
                         <div class="details position-relative">
                             <div class="icon">
@@ -158,7 +158,7 @@
                 <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="700">
                     <div class="service-item">
                         <div class="img">
-                            <img src="assets/img/services-6.png" class="img-fluid" alt="">
+                            <img src="assets/img/services-6.webp" class="img-fluid" alt="">
                         </div>
                         <div class="details position-relative">
                             <div class="icon">
