@@ -3,8 +3,7 @@
 
         <div class="section-header">
             <h2>Kontakt</h2>
-            <p>Ea vitae aspernatur deserunt voluptatem impedit deserunt magnam occaecati dssumenda quas ut ad dolores
-                adipisci aliquam.</p>
+            <p>Jeśli potrzebujesz profesjonalnego doradztwa wykorzystaj poniższy formularz lub zadzwoń.</p>
         </div>
 
     </div>

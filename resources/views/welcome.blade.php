@@ -7,14 +7,14 @@
 
             <div class="section-header">
                 <h2>O nas</h2>
-                <p>AKancelaria Liczydło to firma rodzinna, której obecność na polskim rynku sięga 2009 roku. Początki naszej działalności związane były z usługami księgowymi, wokół których, na przestrzeni już ponad dekady powstała marka wspierająca Klientów i oferująca najwyższy poziom usług w obszarach rachunkowym, kadrowym, płacowym, podatkowym.</p>
+                <p>Kancelaria Liczydło to marka, która jest obecna na polskim rynku już od ponad dekady. Codziennie pomagamy i wspieramy zarówno dużych przedsiębiorców jak i rodzinne firmy, fundacje, stowarzyszenia. Sami zaczynaliśmy lata temu jako mała rodzinna firma zajmująca się usługami księgowymi, na bazie której zbudowaliśmy jedno z największych biur w regionie. Dzisiaj możemy pochwalić się zespołem złożonym z profesjonalistów w takich dziedzinach jak rachunkowość, kadry, płace i podatki. Stale podnosimy swoje kwalifikacje w dbałości o jakość naszych usług. Słuchamy potrzeb naszych klientów i szukamy możliwie najlepszych rozwiązań, aby spełnić ich oczekiwania. Naszą wizytówką są partnerskie relacje z klientami i ich referencje.</p>
             </div>
 
             <div class="row g-4 g-lg-5" data-aos="fade-up" data-aos-delay="200">
 
                 <div class="col-lg-5">
                     <div class="about-img">
-                        <img src="assets/img/about.jpg" class="img-fluid" alt="">
+                        <img src="assets/img/about.png" class="img-fluid" alt="">
                     </div>
                 </div>
 
@@ -71,11 +71,11 @@
                 <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
                     <div class="service-item">
                         <div class="img">
-                            <img src="assets/img/services-1.jpg" class="img-fluid" alt="">
+                            <img src="assets/img/services-1.png" class="img-fluid" alt="">
                         </div>
                         <div class="details position-relative">
                             <div class="icon">
-                                <i class="bi bi-activity"></i>
+                                <i class="bi bi-person-rolodex"></i>
                             </div>
                             <a href="#" class="stretched-link">
                                 <h3>Usługi księgowe</h3>
@@ -88,11 +88,11 @@
                 <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
                     <div class="service-item">
                         <div class="img">
-                            <img src="assets/img/services-2.jpg" class="img-fluid" alt="">
+                            <img src="assets/img/services-2.png" class="img-fluid" alt="">
                         </div>
                         <div class="details position-relative">
                             <div class="icon">
-                                <i class="bi bi-broadcast"></i>
+                                <i class="bi bi-wallet2"></i>
                             </div>
                             <a href="#" class="stretched-link">
                                 <h3>usługi kadrowo - płacowe</h3>
@@ -105,11 +105,11 @@
                 <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
                     <div class="service-item">
                         <div class="img">
-                            <img src="assets/img/services-3.jpg" class="img-fluid" alt="">
+                            <img src="assets/img/services-3.png" class="img-fluid" alt="">
                         </div>
                         <div class="details position-relative">
                             <div class="icon">
-                                <i class="bi bi-easel"></i>
+                                <i class="bi bi-bank"></i>
                             </div>
                             <a href="#" class="stretched-link">
                                 <h3>Doradztwo podatkowe</h3>
@@ -122,11 +122,11 @@
                 <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="500">
                     <div class="service-item">
                         <div class="img">
-                            <img src="assets/img/services-4.jpg" class="img-fluid" alt="">
+                            <img src="assets/img/services-4.png" class="img-fluid" alt="">
                         </div>
                         <div class="details position-relative">
                             <div class="icon">
-                                <i class="bi bi-bounding-box-circles"></i>
+                                <i class="bi bi-check-all"></i>
                             </div>
                             <a href="#" class="stretched-link">
                                 <h3>Nadzór księgowy</h3>
@@ -140,11 +140,11 @@
                 <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="600">
                     <div class="service-item">
                         <div class="img">
-                            <img src="assets/img/services-5.jpg" class="img-fluid" alt="">
+                            <img src="assets/img/services-5.png" class="img-fluid" alt="">
                         </div>
                         <div class="details position-relative">
                             <div class="icon">
-                                <i class="bi bi-calendar4-week"></i>
+                                <i class="bi bi-intersect"></i>
                             </div>
                             <a href="#" class="stretched-link">
                                 <h3>szkolenia branżowe</h3>
@@ -158,11 +158,11 @@
                 <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="700">
                     <div class="service-item">
                         <div class="img">
-                            <img src="assets/img/services-6.jpg" class="img-fluid" alt="">
+                            <img src="assets/img/services-6.png" class="img-fluid" alt="">
                         </div>
                         <div class="details position-relative">
                             <div class="icon">
-                                <i class="bi bi-chat-square-text"></i>
+                                <i class="bi bi-graph-up-arrow"></i>
                             </div>
                             <a href="#" class="stretched-link">
                                 <h3>doradztwo biznesowe</h3>
