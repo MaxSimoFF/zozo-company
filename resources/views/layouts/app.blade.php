@@ -24,8 +24,8 @@
     <link href="{{ asset('assets/vendor/aos/aos.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('assets/css/variables.css?v=1') }}" rel="stylesheet">
-    <link href="{{ asset('assets/css/main.css?v=1') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/variables.css?v=2') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/main.css?v=2') }}" rel="stylesheet">
     <!-- Scripts -->
 </head>
 

@@ -46,7 +46,7 @@
   --color-primary-dark-rgb: 1, 137, 161;
 
   /* Secondary colors */
-  --color-secondary: #485664;
+  --color-secondary: #e8dfdf; /* #485664; */
   --color-secondary-light: #8f9fae;
   --color-secondary-dark: #3a4753;
 
@@ -150,8 +150,8 @@
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
-  --bs-body-color: var(--color-default);
-  --bs-body-bg: #fff;
+  --bs-body-color: #fff;
+  --bs-body-bg: #000a15;
 
 }
 
