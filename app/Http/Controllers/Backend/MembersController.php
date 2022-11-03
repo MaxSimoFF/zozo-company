@@ -11,7 +11,7 @@ class MembersController extends Controller
 {
     public function index()
     {
-        $members = Member::paginate(10);
+        $members = Member::orderBy('position')->paginate(10);
 
         return view('backend.members.index', compact('members'));
     }
@@ -38,6 +38,7 @@ class MembersController extends Controller
                 'education' => $request->education,
                 'deals_with' => $request->deals_with,
                 'photo' => $photo_path,
+                'position' => Member::max('position') + 1,
             ]);
             DB::commit();
         } catch (\Throwable $th) {
@@ -63,6 +64,7 @@ class MembersController extends Controller
             'education' => 'nullable|string',
             'deals_with' => 'required|string',
             'photo' => 'nullable|image|max:5120',
+            'position' => 'required|numeric'
         ]);
         $old_photo = $member->photo;
         if ($request->hasFile('photo')) {
@@ -83,6 +85,10 @@ class MembersController extends Controller
                     unlink(public_path($old_photo));
                 }
             }
+            $this->fixPositionOnUpdatingMember($request->position, $member->position);
+            $member->update([
+                'position' => $request->position
+            ]);
         } catch (\Throwable $th) {
             DB::rollBack();
             return redirect()->back()->withInput()->with('error', 'Something Went wrong please Try again.');
@@ -96,7 +102,31 @@ class MembersController extends Controller
         if (file_exists(public_path($member->photo))) {
             unlink(public_path($member->photo));
         }
+        $this->fixPositionOnDeletingMember($member->position);
         $member->delete();
         return redirect()->back()->with('success', 'Member Deleted Successfully');
+    }
+
+    private function fixPositionOnUpdatingMember($position, $memberPosition)
+    {
+        if ($memberPosition > $position) {
+            $members = Member::whereBetween('position', [$position, $memberPosition])->get();
+            foreach ($members as $member) {
+                $member->increment('position');
+            }
+        } else {
+            $members = Member::whereBetween('position', [$memberPosition, $position])->get();
+            foreach ($members as $member) {
+                $member->decrement('position');
+            }
+        }
+    }
+
+    private function fixPositionOnDeletingMember($position)
+    {
+        $members = Member::where('position', '>', $position)->get();
+        foreach($members as $member){
+            $member->decrement('position');
+        }
     }
 }

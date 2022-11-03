@@ -38,6 +38,7 @@
                                             <th>Name</th>
                                             <th>Education</th>
                                             <th>Deals with</th>
+                                            <th>Position</th>
                                             <th>Actions</th>
                                         </tr>
                                     </thead>
@@ -48,7 +49,8 @@
                                                 <td><img src="{{ asset($member->photo) }}" alt="photo" width="100" height="100"></td>
                                                 <td>{{ $member->name }}</td>
                                                 <td>{{ $member->education }}</td>
-                                                <td>{{ $member->deals_with }}</td>
+                                                <td>{!! $member->deals_with !!}</td>
+                                                <td>{{ $member->position }}</td>
                                                 <td>
                                                     <form action="{{ route('backend.members.destroy', $member) }}" method="post">
                                                         @csrf
@@ -60,7 +62,7 @@
                                             </tr>
                                         @empty
                                             <tr>
-                                                <td colspan="6" class="text-center">No record found</td>
+                                                <td colspan="7" class="text-center">No record found</td>
                                             </tr>
                                         @endforelse
                                     </tbody>
@@ -71,6 +73,7 @@
                                             <th>Name</th>
                                             <th>Education</th>
                                             <th>Deals with</th>
+                                            <th>Position</th>
                                             <th>Actions</th>
                                         </tr>
                                     </tfoot>

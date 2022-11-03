@@ -27,7 +27,7 @@ class MemberProvider extends ServiceProvider
         view()->composer(
             'includes.partials.team',
             static function ($view) {
-                $members = Member::all();
+                $members = Member::orderBy('position')->get();
                 $view->with('members', $members);
             }
         );

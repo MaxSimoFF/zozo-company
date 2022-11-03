@@ -63,6 +63,18 @@
                                             <span class="text-danger">{{ $message }}</span>
                                         @enderror
                                     </div>
+
+                                    <div class="form-group">
+                                        <label>Position ( sorting )</label>
+                                        <input type="number" name="position"
+                                            class="form-control @error('position') is-invalid @enderror"
+                                            placeholder="Enter member education"
+                                            value="{{ old('position') ?? $member->position }}">
+                                        @error('education')
+                                            <span class="text-danger">{{ $message }}</span>
+                                        @enderror
+                                    </div>
+
                                     <div class="form-group">
                                         <label for="exampleInputFile">Photo</label>
                                         <div class="text-muted px-3 mb-2">Leave it empty if you don't want to change it
