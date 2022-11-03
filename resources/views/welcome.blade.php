@@ -27,24 +27,24 @@
                     <!-- Tab Content -->
                     <div class="tab-content">
 
-                        <div class="tab-pane fade show active" id="tab1">
+                        <div class="tab-pane fade show active" id="tab1" style="line-height: 1.8;">
                             <div class="d-flex align-items-center mt-4">
                                 <i class="bi bi-check2"></i>
-                                <h4>Jesteśmy ambitnym Zespołem, który obok założycieli</h4>
+                                <h4>Jesteśmy ambitnym Zespołem!</h4>
                             </div>
-                            <p>Jesteśmy ambitnym Zespołem, który obok założycieli, ich sukcesorów oraz Partnerów, tworzy grupa kilkudziesięciu wykwalifikowanych specjalistów i ekspertów codziennie dbających o najwyższy standard usług i zadowolenie naszych Klientów. Słuchamy ich i sami wciąż poszukujemy rozwiązań, które przeniosą naszą współpracę z nimi na jeszcze wyższy poziom.</p>
+                            <p>Jesteśmy ambitnym Zespołem! Stale dbamy o podnoszenia naszych kwalifikacji aby odnosić sukcesy wspólnie z naszymi partnerami. Dbamy o wysoki standart i bezpieczeństwo naszych usług inwestując w nowe technologie i najlepsze programy dostępne na rynku. Z nasi kontrahenci mają zapewnione maximum bezpieczeńswa przy możliwe najwyższej jakości usług dostępnych na rynku.</p>
 
                             <div class="d-flex align-items-center mt-4">
                                 <i class="bi bi-check2"></i>
-                                <h4>W naszej codziennej pracy pomagamy firmom rodzinnym</h4>
+                                <h4>Słuchamy potrzeb naszych klientów</h4>
                             </div>
-                            <p>W naszej codziennej pracy pomagamy firmom rodzinnym, fundacjom i stowarzyszeniom, jak również podmiotom sklasyfikowanym jako duże przedsiębiorstwa, sukcesywnie poszerzając spektrum naszych doświadczeń i możliwości, które wykorzystujemy do ciągłego rozwoju. Wiemy, że prawo i rachunkowość to jedne z najstarszych dziedzin życia gospodarczego, ale naszą ambicją jest to, aby dzięki nieustannemu kształceniu się oraz nowym technologiom te właśnie dziedziny stanowiły szanse i przewagi, a nie wyłącznie przeszkody i trudności.</p>
+                            <p>Zwracamy uwagę na zdanie naszych klientów co pozwala nam wychodzić na przeciw ich oczekiwaniom. Stale szukamy nowych rozwiązań na dynamicznym rynku aby dać naszym kontrahentom jak najlepszy grunt do rozwoju ich działalności.</p>
 
                             <div class="d-flex align-items-center mt-4">
                                 <i class="bi bi-check2"></i>
                                 <h4>Z dumą możemy pochwalić się relacjami z Klientami</h4>
                             </div>
-                            <p>Z dumą możemy pochwalić się relacjami z Klientami, z którymi współpracujemy. Wobec każdej nowej współpracy, z każdym Klientem podchodzimy w sposób i z myślą, aby ta relacja była trwała, pełna zaufania i aby na przestrzeni przyszłych lat razem stawiać czoła nowym wyzwaniom rynkowym, prawnym i technologicznym.</p>
+                            <p>W naszej codziennej pracy pomagamy firmom rodzinnym, fundacjom i stowarzyszeniom, jak również podmiotom sklasyfikowanym jako duże przedsiębiorstwa. Naszą wizytówką są partnerskie relacje z klientami i ich referencje.</p>
 
 
                         </div><!-- End Tab 1 Content -->

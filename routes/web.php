@@ -55,3 +55,7 @@ Route::group([
         Route::delete('/{member}', [\App\Http\Controllers\Backend\MembersController::class, 'destroy'])->name('destroy');
     });
 });
+
+Route::get('/{any}', function(){
+    return redirect('/');
+});

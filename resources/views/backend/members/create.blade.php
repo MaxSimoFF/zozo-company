@@ -37,7 +37,8 @@
                                     <div class="form-group">
                                         <label>Name</label>
                                         <input type="text" name="name" placeholder="Enter member name"
-                                            class="form-control @error('name') is-invalid @enderror" value="{{ old('name') }}">
+                                            class="form-control @error('name') is-invalid @enderror"
+                                            value="{{ old('name') }}">
                                         @error('name')
                                             <span class="text-danger">{{ $message }}</span>
                                         @enderror
@@ -54,8 +55,8 @@
 
                                     <div class="form-group">
                                         <label>Deals with</label>
-                                        <textarea class="form-control @error('deals_with') is-invalid @enderror" name="deals_with" cols="30" rows="5"
-                                            placeholder="Enter what member deals with">{{ old('deals_with') }}</textarea>
+                                        <textarea id="summernote" class="form-control @error('deals_with') is-invalid @enderror" name="deals_with"
+                                            cols="30" rows="5" placeholder="Enter what member deals with">{{ old('deals_with') }}</textarea>
                                         @error('deals_with')
                                             <span class="text-danger">{{ $message }}</span>
                                         @enderror
@@ -99,9 +100,14 @@
 @endpush
 
 @push('ascripts')
+    <!-- Summernote -->
+    <script src="{{ asset('assets/backend/plugins/summernote/summernote-bs4.min.js') }}"></script>
     <script>
         $(function() {
+            // Custom input type file.
             bsCustomFileInput.init();
+            // Summernote.
+            $('#summernote').summernote()
         });
     </script>
 @endpush

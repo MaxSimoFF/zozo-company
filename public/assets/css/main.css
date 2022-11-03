@@ -2204,10 +2204,7 @@ section {
 }
 
 .team .team-member .member-info p {
-  font-style: italic;
-  font-size: 14px;
-  line-height: 26px;
-  color: var(--color-gray);
+  margin: 0;
 }
 
 .team .team-member:hover .social {

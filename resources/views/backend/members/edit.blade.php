@@ -38,7 +38,8 @@
                                     <div class="form-group">
                                         <label>Name</label>
                                         <input type="text" name="name" placeholder="Enter member name"
-                                            class="form-control @error('name') is-invalid @enderror" value="{{ old('name') ?? $member->name }}">
+                                            class="form-control @error('name') is-invalid @enderror"
+                                            value="{{ old('name') ?? $member->name }}">
                                         @error('name')
                                             <span class="text-danger">{{ $message }}</span>
                                         @enderror
@@ -47,7 +48,8 @@
                                         <label>Education</label>
                                         <input type="text" name="education"
                                             class="form-control @error('education') is-invalid @enderror"
-                                            placeholder="Enter member education" value="{{ old('education') ?? $member->education }}">
+                                            placeholder="Enter member education"
+                                            value="{{ old('education') ?? $member->education }}">
                                         @error('education')
                                             <span class="text-danger">{{ $message }}</span>
                                         @enderror
@@ -55,7 +57,7 @@
 
                                     <div class="form-group">
                                         <label>Deals with</label>
-                                        <textarea class="form-control @error('deals_with') is-invalid @enderror" name="deals_with" cols="30" rows="5"
+                                        <textarea id="summernote" class="form-control @error('deals_with') is-invalid @enderror" name="deals_with" cols="30" rows="5"
                                             placeholder="Enter what member deals with">{{ old('deals_with') ?? $member->deals_with }}</textarea>
                                         @error('deals_with')
                                             <span class="text-danger">{{ $message }}</span>
@@ -63,7 +65,8 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="exampleInputFile">Photo</label>
-                                        <div class="text-muted px-3 mb-2">Leave it empty if you don't want to change it</div>
+                                        <div class="text-muted px-3 mb-2">Leave it empty if you don't want to change it
+                                        </div>
                                         <div class="input-group">
                                             <div class="custom-file">
                                                 <input type="file" name="photo"
@@ -101,9 +104,14 @@
 @endpush
 
 @push('ascripts')
+    <!-- Summernote -->
+    <script src="{{ asset('assets/backend/plugins/summernote/summernote-bs4.min.js') }}"></script>
     <script>
         $(function() {
+            // Custom input type file.
             bsCustomFileInput.init();
+            // Summernote.
+            $('#summernote').summernote()
         });
     </script>
 @endpush

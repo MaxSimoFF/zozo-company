@@ -24,7 +24,8 @@
     <link rel="stylesheet" href="{{ asset('assets/backend/plugins/toastr/toastr.min.css') }}">
     <!-- Theme style -->
     <link rel="stylesheet" href="{{ asset('assets/backend/dist/css/adminlte.min.css') }}">
-    {{-- @vite(['resources/sass/app.scss', 'resources/js/app.js']) --}}
+    <!-- summernote -->
+    <link rel="stylesheet" href="{{ asset('assets/backend/plugins/summernote/summernote-bs4.min.css') }}">
 </head>
 
 <body>
@@ -35,8 +36,8 @@
 
         <!-- Preloader -->
         <div class="preloader flex-column justify-content-center align-items-center">
-            <img class="animation__wobble" src="{{ asset('assets/backend/dist/img/AdminLTELogo.png') }}" alt="AdminLTELogo" height="60"
-                width="60">
+            <img class="animation__wobble" src="{{ asset('assets/backend/dist/img/AdminLTELogo.png') }}"
+                alt="AdminLTELogo" height="60" width="60">
         </div>
 
         <!-- Navbar -->
