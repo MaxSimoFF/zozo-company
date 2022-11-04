@@ -40,7 +40,8 @@
                         <i class="bi bi-phone flex-shrink-0"></i>
                         <div>
                             <h4>Telefon:</h4>
-                            <p>+48 889 421 363</p>
+                            <p>Biuro: +48 512 611 778</p>
+                            <p>Umów się na rozmowę: +48 889 421 363</p>
                         </div>
                     </div><!-- End Info Item -->
 

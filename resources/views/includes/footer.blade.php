@@ -14,8 +14,8 @@
             </div>
 
             <div class="social-links order-first order-lg-last mb-3 mb-lg-0">
-                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100054607413505" class="facebook" target="_blank"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.linkedin.com/company/liczydlo" class="linkedin" target="_blank"><i class="bi bi-linkedin"></i></a>
             </div>
 
         </div>
