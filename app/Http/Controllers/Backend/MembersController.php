@@ -39,6 +39,7 @@ class MembersController extends Controller
                 'deals_with' => $request->deals_with,
                 'photo' => $photo_path,
                 'position' => Member::max('position') + 1,
+                'type' => $request->has('type') ? Member::MANAGER : Member::MEMBER,
             ]);
             DB::commit();
         } catch (\Throwable $th) {
@@ -78,6 +79,7 @@ class MembersController extends Controller
                 'education' => $request->education,
                 'deals_with' => $request->deals_with,
                 'photo' => $photo_path ?? $old_photo,
+                'type' => $request->has('type') ? Member::MANAGER : Member::MEMBER,
             ]);
             DB::commit();
             if ($request->hasFile('photo')) {

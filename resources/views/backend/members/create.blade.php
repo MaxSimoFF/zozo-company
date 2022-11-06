@@ -61,6 +61,17 @@
                                             <span class="text-danger">{{ $message }}</span>
                                         @enderror
                                     </div>
+
+                                    <div class="form-group">
+                                        <div class="custom-control custom-switch">
+                                            <input type="checkbox" class="custom-control-input @error('type') is-invalid @enderror" id="type" name="type">
+                                            <label class="custom-control-label" for="type">Is Manager ?</label>
+                                        </div>
+                                        @error('type')
+                                            <span class="text-danger">{{ $message }}</span>
+                                        @enderror
+                                    </div>
+
                                     <div class="form-group">
                                         <label for="exampleInputFile">Photo</label>
                                         <div class="input-group">

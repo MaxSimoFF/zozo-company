@@ -57,8 +57,8 @@
 
                                     <div class="form-group">
                                         <label>Deals with</label>
-                                        <textarea id="summernote" class="form-control @error('deals_with') is-invalid @enderror" name="deals_with" cols="30" rows="5"
-                                            placeholder="Enter what member deals with">{{ old('deals_with') ?? $member->deals_with }}</textarea>
+                                        <textarea id="summernote" class="form-control @error('deals_with') is-invalid @enderror" name="deals_with"
+                                            cols="30" rows="5" placeholder="Enter what member deals with">{{ old('deals_with') ?? $member->deals_with }}</textarea>
                                         @error('deals_with')
                                             <span class="text-danger">{{ $message }}</span>
                                         @enderror
@@ -71,6 +71,16 @@
                                             placeholder="Enter member education"
                                             value="{{ old('position') ?? $member->position }}">
                                         @error('education')
+                                            <span class="text-danger">{{ $message }}</span>
+                                        @enderror
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="custom-control custom-switch">
+                                            <input {{ $member->type == \App\Models\Member::MANAGER ? 'checked' : '' }} type="checkbox" class="custom-control-input @error('type') is-invalid @enderror" id="type" name="type">
+                                            <label class="custom-control-label" for="type">Is Manager ?</label>
+                                        </div>
+                                        @error('type')
                                             <span class="text-danger">{{ $message }}</span>
                                         @enderror
                                     </div>
