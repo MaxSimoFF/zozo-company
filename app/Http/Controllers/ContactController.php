@@ -31,7 +31,7 @@ class ContactController extends Controller
             'message' => $request->message,
         ]);
 
-        Mail::to('moustafaadel019@gmail.com')->send(new \App\Mail\ContactMail($contact));
+        Mail::to('biuro@liczydlosc.pl')->send(new \App\Mail\ContactMail($contact));
 
         return 'OK';
     }
