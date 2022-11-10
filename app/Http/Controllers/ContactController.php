@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Contact;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Validator;
 
 class ContactController extends Controller
@@ -23,13 +24,14 @@ class ContactController extends Controller
         }
 
 
-        Contact::create([
+        $contact = Contact::create([
             'ip' => $request->ip(),
             'name' => $request->name,
             'email' => $request->email,
             'message' => $request->message,
         ]);
 
+        Mail::to('moustafaadel019@gmail.com')->send(new \App\Mail\ContactMail($contact));
 
         return 'OK';
     }
